@@ -25,10 +25,17 @@ body{
 #header .head-top a{
     color: #131313;
     font-size: 1.5rem;
+    font-weight: 600;
+}
+
+#header .head-top a .fa-heart{
+    color: #f13636;
+    font-size: 1.3rem;
 }
 
 #header .head-top .logo{
     font-size: 2rem;
+    font-weight: 700;
 }
 
 #header .search-input{
@@ -54,4 +61,77 @@ body{
     width: 100px;
     height: 100%;
     border-radius: 0 50px 50px 0;
+    border: 0;
+    font-size: 1.4rem;
+    background-color: #ffa600;
+    cursor: pointer;
+    color: #fff;
+}
+
+#search-results{
+    margin-top: 5rem;
+    flex-direction: column;
+}
+
+#search-results h2{
+    margin-bottom: 3rem;
+    font-size: 1.5rem;
+    padding: 0 1rem;
+    font-weight: 400;
+    color: #525252;
+}
+
+#search-results .search-result-cards{
+    justify-content: space-around;
+    row-gap: 2rem;
+    flex-wrap: wrap;
+}
+
+#search-results .search-result-cards .card{
+    width: 400px;
+    height: 450px;
+    position: relative;
+    margin: 0 10px;
+}
+
+#search-results .search-result-cards .card img{
+    border-radius: 20px;
+}
+
+#search-results .card .fa-heart{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.7rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+#search-results .search-result-cards .card .recipe-name{
+    position: absolute;
+    bottom: 0;
+    background-color: #13131386;
+    backdrop-filter: blur(10px);
+    width: 100%;
+    height: 100px;
+    border-radius: 0 0 20px 20px;
+}
+
+#search-results .search-result-cards .card .recipe-name h2{
+    padding: 2rem;
+    font-size: 2rem;
+    color: #fff;
+}
+
+#footer{
+    background-color: #ffa600;
+    flex-direction: column;
+    height: 80px;
+    margin-top: 4rem;
+    justify-content: center;
+    color: #131313;
+}
+
+#footer p{
+    margin-top: 10px;
 }
