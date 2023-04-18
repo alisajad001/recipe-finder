@@ -13,19 +13,20 @@ const getRecipe = async () => {
     let searchValue = userSearch.value;
     const baseUrl = `https://api.edamam.com/search?q=${searchValue}&app_id=${app_id}&app_key=${api_key}&to=7`;
     searchResult.innerHTML = searchValue;
+
+    // Loader
+    setTimeout(() => {
+        loader.style.display = 'block';
+    }, document.onload);
     
+
     try {
         const response = await fetch(`${baseUrl}`);
-        
         if(response.ok){
-            setTimeout(() => {
-                loader.style.display = 'block';
-            }, document.onload);
             const jsonResponse = await response.json();
             const data = jsonResponse;
             generateHTML(data.hits)
         }
-        
     } catch (error) {
         console.log(error);
     }
