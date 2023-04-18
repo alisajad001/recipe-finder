@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Recipe Viewer</title>
+    <title>Recipe Finder</title>
 
     <!-- Metadata -->
     <meta charset="UTF-8">
@@ -11,9 +11,60 @@
     <!-- CSS Files -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/utilities.css">
+
+    <!-- Fontawesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <!-- Raleway Font Family from Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <main class="container">
+        <!-- Header - srtart -->
+        <header id="header" class="flex">
+            <div class="head-top flex just-between align-center">
+                <a href="#" class="logo">Recipe <span class="highlight">Finder</span></a>
+                <a href="#">Favorites <i class="fa-solid fa-heart"></i></a>
+            </div>
+            <label for="search" class="search-input flex just-between align-center">
+                <input type="text" id="search" placeholder="Search for recipes...">
+                <button class="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </label>
+        </header>
+        <!-- Header - end -->
+
+        <!-- Search Results - srtart -->
+        <section id="search-results">
+            <h2>Search results: <span id="search-result">Pizza</span></h2>
+            <div class="search-result-cards">
+                <div class="card">
+                    <img src="https://plus.unsplash.com/premium_photo-1672498294724-dde3b2e41e19?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cGl6emF8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="">
+                    <i class="fa-solid fa-heart"></i>
+                    <div class="recipe-name">
+                        <h2>Pizza</h2>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://plus.unsplash.com/premium_photo-1672498294724-dde3b2e41e19?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cGl6emF8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="">
+                    <i class="fa-solid fa-heart"></i>
+                    <div class="recipe-name">
+                        <h2>Pizza</h2>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://plus.unsplash.com/premium_photo-1672498294724-dde3b2e41e19?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cGl6emF8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="">
+                    <i class="fa-solid fa-heart"></i>
+                    <div class="recipe-name">
+                        <h2>Pizza</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Search Results - end -->
+
+    </main>
     <script src="js/script.js"></script>
 </body>
 </html>

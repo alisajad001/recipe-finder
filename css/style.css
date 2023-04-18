@@ -1,0 +1,57 @@
+html{
+    font-size: 16px;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 2em;
+}
+
+#header{
+    flex-direction: column;
+    height: 200px;
+    justify-content: space-between;
+}
+
+#header .head-top{
+    padding: 1em 0;
+}
+
+#header .head-top a{
+    color: #131313;
+    font-size: 1.5rem;
+}
+
+#header .head-top .logo{
+    font-size: 2rem;
+}
+
+#header .search-input{
+    background-color: #eee;
+    border: 1px solid #d1d1d1;
+    width: 800px;
+    height: 60px;
+    margin: 0 auto;
+    border-radius: 50px;
+    position: relative;
+}
+
+#header .search-input input{
+    height: 100%;
+    width: 90%;
+    border-radius: 50px 0 0 50px;
+    border: none;
+    padding: 0 2em;
+    font-size: 1.3rem;
+}
+
+#header .search-input .submit{
+    width: 100px;
+    height: 100%;
+    border-radius: 0 50px 50px 0;
+}
