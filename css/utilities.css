@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+/* Typography */
 a{
     text-decoration: none;
 }
@@ -12,6 +13,7 @@ a{
     color: #ffa600;
 }
 
+/* Box Sizing */
 .flex{
     display: flex;
 }

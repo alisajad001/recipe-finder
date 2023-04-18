@@ -7,6 +7,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="favicon/favicon.ico" rel="icon" type="image/x-icon" />
 
     <!-- CSS Files -->
     <link rel="stylesheet" href="css/style.css">
@@ -28,8 +29,8 @@
                 <a href="#" class="logo">Recipe <span class="highlight">Finder</span></a>
                 <a href="#">Favorites <i class="fa-solid fa-heart"></i></a>
             </div>
-            <label for="search" class="search-input flex just-between align-center">
-                <input type="text" id="search" placeholder="Search for recipes...">
+            <label for="searchInput" class="search-input flex just-between align-center">
+                <input type="text" id="searchInput" placeholder="Search for recipes...">
                 <button class="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
             </label>
         </header>
@@ -37,50 +38,9 @@
 
         <!-- Search Results - srtart -->
         <section id="search-results" class="flex">
-            <h2>Search results: <span id="search-result">Pizza</span></h2>
+            <h2>Search results: <span id="search-result"></span></h2>
             <div class="search-result-cards flex">
-                <div class="card">
-                    <img src="https://plus.unsplash.com/premium_photo-1672498294724-dde3b2e41e19?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cGl6emF8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="">
-                    <i class="fa-solid fa-heart"></i>
-                    <div class="recipe-name">
-                        <h2>Pizza</h2>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="https://plus.unsplash.com/premium_photo-1672498294724-dde3b2e41e19?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cGl6emF8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="">
-                    <i class="fa-solid fa-heart"></i>
-                    <div class="recipe-name">
-                        <h2>Pizza</h2>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="https://plus.unsplash.com/premium_photo-1672498294724-dde3b2e41e19?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cGl6emF8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="">
-                    <i class="fa-solid fa-heart"></i>
-                    <div class="recipe-name">
-                        <h2>Pizza</h2>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="https://plus.unsplash.com/premium_photo-1672498294724-dde3b2e41e19?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cGl6emF8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="">
-                    <i class="fa-solid fa-heart"></i>
-                    <div class="recipe-name">
-                        <h2>Pizza</h2>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="https://plus.unsplash.com/premium_photo-1672498294724-dde3b2e41e19?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cGl6emF8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="">
-                    <i class="fa-solid fa-heart"></i>
-                    <div class="recipe-name">
-                        <h2>Pizza</h2>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="https://plus.unsplash.com/premium_photo-1672498294724-dde3b2e41e19?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cGl6emF8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="">
-                    <i class="fa-solid fa-heart"></i>
-                    <div class="recipe-name">
-                        <h2>Pizza</h2>
-                    </div>
-                </div>
+                <img src="favicon/loader.gif" alt="" class="loader">
             </div>
         </section>
         <!-- Search Results - end -->
@@ -90,6 +50,7 @@
         <h2>Recipe Finder</h2>
         <p>Created with <i class="fa-solid fa-heart"></i> by Ali Sajad Ahamdi</p>
     </footer>
+
     <script src="js/script.js"></script>
 </body>
 </html>
