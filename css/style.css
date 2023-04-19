@@ -4,6 +4,7 @@ html{
 
 body{
     font-family: 'Raleway', sans-serif;
+    position: relative;
 }
 
 .container{
@@ -87,13 +88,13 @@ body{
 
 #search-results .search-result-cards{
     justify-content: space-around;
-    row-gap: 2rem;
+    row-gap: 3rem;
     flex-wrap: wrap;
 }
 
 #search-results .search-result-cards .card{
-    width: 400px;
-    height: 450px;
+    width: 350px;
+    height: 400px;
     position: relative;
     margin: 0 10px;
 }
@@ -107,7 +108,7 @@ body{
     top: 1rem;
     right: 1rem;
     font-size: 1.7rem;
-    color: #fff;
+    color: #f13636;
     cursor: pointer;
 }
 
@@ -141,11 +142,10 @@ body{
     flex-direction: column;
     height: 80px;
     width: 100%;
-    margin-top: 4rem;
     justify-content: center;
     color: #131313;
     font-size: 14px;
-
+    margin-top: 5rem;
 }
 
 #footer p{
@@ -157,4 +157,25 @@ body{
     width: 100px;
     margin: 5rem 0;
     display: none;
+}
+
+/* Responsive */
+@media (max-width: 450px){
+    #header .head-top a{
+        font-size: 1.3rem !important;
+    }
+
+    #search-results h2{
+        font-size: 1.2rem;
+    }
+
+}
+@media screen and (max-width: 870px){
+    #header .search-input{
+        width: 90%;
+    }
+
+    #header .search-input input{
+        font-size: 0.9rem;
+    }
 }

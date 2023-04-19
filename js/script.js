@@ -9,9 +9,10 @@ let loader = document.querySelector('.loader');
 const app_id = '8bff48f8';
 const api_key = '31a182112982e47aee53ccf3309de709';
 
+// Get recipe info
 const getRecipe = async () => {
     let searchValue = userSearch.value;
-    const baseUrl = `https://api.edamam.com/search?q=${searchValue}&app_id=${app_id}&app_key=${api_key}&to=7`;
+    const baseUrl = `https://api.edamam.com/search?q=${searchValue}&app_id=${app_id}&app_key=${api_key}&to=9`;
     searchResult.innerHTML = searchValue;
 
     // Loader
@@ -35,6 +36,7 @@ const getRecipe = async () => {
 
 searchBtn.addEventListener('click', getRecipe);
 
+// Create new card for each item
 const generateHTML = (results) =>{
     let generatedHTML = '';
     results.map((result) =>{
