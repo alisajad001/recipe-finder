@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import NavBar from "./components/NavBar";
+import FoodData from "./components/FoodData";
+import Container from "./components/Container";
+import FoodDetails from "./components/FoodDetails";
 
 const App = () => {
   const [recipes, setRecipes] = useState([]);
@@ -13,13 +16,10 @@ const App = () => {
         setIsLoading={setIsLoading}
       />
 
-      {isLoading ? (
-        <p>Loading...</p>
-      ) : (
-        recipes.map((recipe) => {
-          return <h3>{recipe.title}</h3>;
-        })
-      )}
+      <Container>
+        <FoodData recipes={recipes} />
+        <FoodDetails />
+      </Container>
     </>
   );
 };

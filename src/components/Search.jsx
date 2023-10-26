@@ -4,7 +4,7 @@ const URL = "https://api.spoonacular.com/recipes/complexSearch";
 const API_KEY = "6b50657349e641b3b88a0fc3dcfc9bd0";
 
 const Search = ({ setRecipes, setIsLoading }) => {
-  const [query, setQuery] = useState("");
+  const [query, setQuery] = useState("pizza");
 
   const fetchData = async () => {
     const res = await fetch(`${URL}?query=${query}&apiKey=${API_KEY}`);
@@ -19,7 +19,7 @@ const Search = ({ setRecipes, setIsLoading }) => {
   };
 
   useEffect(() => {
-    handleClick;
+    handleClick();
   }, []);
 
   return (
@@ -32,7 +32,7 @@ const Search = ({ setRecipes, setIsLoading }) => {
         className="mr-3 py-2 px-3 rounded-md border border-slate-400 outline-none"
       />
       <button
-        className="bg-orange-400 hover:bg-orange-500 transition w-10 h-10 text-white rounded-full"
+        className="bg-yellow-500 hover:bg-orange-500 transition w-10 h-10 text-white rounded-full"
         onClick={handleClick}
       >
         🔍
