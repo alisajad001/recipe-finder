@@ -7,18 +7,24 @@ import FoodDetails from "./components/FoodDetails";
 const App = () => {
   const [recipes, setRecipes] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
+  const [foodId, setFoodId] = useState("656329");
 
   return (
     <>
       <NavBar
         recipe={recipes}
         setRecipes={setRecipes}
-        setIsLoading={setIsLoading}
+        foodId={foodId}
+        setFoodId={setFoodId}
       />
 
       <Container>
-        <FoodData recipes={recipes} />
-        <FoodDetails />
+        <FoodData recipes={recipes} setFoodId={setFoodId} />
+        <FoodDetails
+          foodId={foodId}
+          isLoading={isLoading}
+          setIsLoading={setIsLoading}
+        />
       </Container>
     </>
   );

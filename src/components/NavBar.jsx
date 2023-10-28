@@ -1,13 +1,17 @@
 import React from "react";
 import Search from "./Search";
 
-const NavBar = ({ setRecipes, setIsLoading }) => {
+const NavBar = ({ setRecipes, setIsLoading, setFoodId }) => {
   return (
     <div className="flex items-center fixed w-full shadow-2xl bg-slate-700 p-4">
       <a href="#" className="font-bold text-2xl mr-auto text-slate-100">
         🍕 Recipizza
       </a>
-      <Search setRecipes={setRecipes} setIsLoading={setIsLoading} />
+      <Search
+        setFoodId={setFoodId}
+        setRecipes={setRecipes}
+        setIsLoading={setIsLoading}
+      />
     </div>
   );
 };
